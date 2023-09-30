@@ -1,14 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image</title>
+    <style>
+        /* Apply CSS styles to the body and image to make them fill the entire screen */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
 
-<!DOCTYPE html><html><head><title>Abhishek Kumar – Software Developer · Resume.io</title>
-<meta name="robots" content="noindex, nofollow">
-<link rel="image_src" href="https://ssr.resume.tools/to-og-image/ssid-r3xUZNdkT.png">
-<meta property="og:title" content="Abhishek Kumar – Software Developer">
-<meta property="og:description" content="Powered by Resume.io">
-<meta property="og:image" content="https://ssr.resume.tools/to-og-image/ssid-r3xUZNdkT.png">
-<meta property="og:image:secure_url" content="https://ssr.resume.tools/to-og-image/ssid-r3xUZNdkT.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://ssr.resume.tools/to-og-image/ssid-r3xUZNdkT.png"><meta content="strict-origin-when-cross-origin" name="referrer" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><link rel="icon" type="image/x-icon" href="/assets/favicon/resume/favicon-370eedaf612a0ee315e4f32878253e4e0f900ff318654809a96e9a06db77d1af.ico" sizes="any" /><link rel="icon" type="image/svg+xml" href="/assets/favicon/resume/favicon-ebca70e4713ae491d50ce36cecf86663d8cc6790d3938049d342cd49be90fa7f.svg" /><link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/resume/apple-touch-icon-b8fda06896fb6e22e014be6ad49291c17233342397d40cb1f3bb1413143287bf.png" /><link rel="stylesheet" media="all" href="/assets/css/sharing-98bd46d41d028451575455371a1b9bc90eb3e45a43bf22a9c09228167468ef67.css" /><script src="/assets/js/sharing-9be075261433d9b40763a2d86f3f5248a98907640ef84c25d92d5517cae58b25.js" defer="defer" type="24048cc6bdf4de468fa2d481-text/javascript"></script></head><body><div class="topbar"><a class="topbar__logo-link" href="/?utm_source=resume_url"><div class="topbar__logo" style="background-image: url(https://s3.resume.io/uploads/country/logo_default/2/for-light-bg.svg)"></div></a></div><div class="resume"><div class="pdf-viewer" data-error-text="Failed to load resume" data-ssid="r3xUZNdkT" data-version="c5f3e26348"><div class="pdf-viewer__page pdf-viewer__page--loading"></div></div></div><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="24048cc6bdf4de468fa2d481-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"80ee349f6a733b6d","token":"fba9499e73b64194963c2e32787de774","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
-</body></html>
+        #fullscreen-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Scale the image to cover the entire viewport */
+        }
+    </style>
+</head>
+<body>
+    <!-- Replace 'image.jpg' with the path to your image -->
+    <img id="fullscreen-image" src="capture.png" alt="Full Screen Image">
+</body>
+</html>
